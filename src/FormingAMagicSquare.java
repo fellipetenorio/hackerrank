@@ -1,12 +1,20 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+// https://www.hackerrank.com/challenges/magic-square-forming/problem
+/*
+e.g:
+4 8 2
+4 5 7
+6 1 6
 
-public class Solution {
+output:
+4
+
+ */
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
+
+public class FormingAMagicSquare {
 
     static int cost(int[][] square, int[][] c) {
         int cost = 0;
