@@ -2,7 +2,7 @@ package d4;
 
 import java.util.Scanner;
 
-public class QeGeometricalDistribution1 {
+public class Q3GeometricalDistribution1 {
     public static void main(String[] args) {
         // 1.09 1
         Scanner scanner = new Scanner(System.in);
