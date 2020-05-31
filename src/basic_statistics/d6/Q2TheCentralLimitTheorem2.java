@@ -1,8 +1,8 @@
-package d6;
+package basic_statistics.d6;
 
 import java.util.Scanner;
 
-public class Q3TheCentralLimitTheorem3 {
+public class Q2TheCentralLimitTheorem2 {
     public static void main(String[] args) {
         // 1.09 1
         Scanner scanner = new Scanner(System.in);
@@ -12,17 +12,13 @@ public class Q3TheCentralLimitTheorem3 {
         double b = Double.parseDouble(scanner.nextLine());
         double c = Double.parseDouble(scanner.nextLine());
         double d = Double.parseDouble(scanner.nextLine());
-        double e = Double.parseDouble(scanner.nextLine());
-        solve(a, b, c, d, e);
+        solve(a, b, c, d);
     }
 
-    private static void solve(double size, double mean, double sd, double percentage, double z) {
-        double v = z * sd / Math.sqrt(size);
-        double a = mean - v;
-        double b = mean + v;
+    private static void solve(double maxPounds, double box, double mean, double sd) {
+        double prob = cDF(box*mean, Math.sqrt(box)*sd, maxPounds);
 
-        System.out.printf("%.2f\n", a);
-        System.out.printf("%.2f\n", b);
+        System.out.printf("%.4f\n", prob);
     }
 
     private static double cDF(double mean, double sd, double x) {

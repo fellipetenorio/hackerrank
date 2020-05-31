@@ -1,4 +1,4 @@
-package d5;
+package basic_statistics.d5;
 
 import java.util.Scanner;
 

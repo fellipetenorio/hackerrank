@@ -1,8 +1,8 @@
-package d6;
+package basic_statistics.d6;
 
 import java.util.Scanner;
 
-public class Q2TheCentralLimitTheorem2 {
+public class Q1TheCentralLimitTheorem1 {
     public static void main(String[] args) {
         // 1.09 1
         Scanner scanner = new Scanner(System.in);

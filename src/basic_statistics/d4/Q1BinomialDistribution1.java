@@ -1,4 +1,4 @@
-package d4;
+package basic_statistics.d4;
 
 import java.util.Scanner;
 
