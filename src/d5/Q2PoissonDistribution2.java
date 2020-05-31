@@ -2,7 +2,7 @@ package d5;
 
 import java.util.Scanner;
 
-public class Q1PoissonDistribution2 {
+public class Q2PoissonDistribution2 {
     public static void main(String[] args) {
         // 1.09 1
         Scanner scanner = new Scanner(System.in);
