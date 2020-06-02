@@ -14,6 +14,7 @@ public class Q1PearsonCorrelationCoefficient1 {
             x[i] = Double.parseDouble(tokens[i]);
         }
 
+        s = scanner.nextLine();
         tokens = s.split(" ");
         double[] y = new double[size];
         for (int i=0; i < size; i++) {
@@ -33,9 +34,9 @@ public class Q1PearsonCorrelationCoefficient1 {
         double covv=0;
 
         double xM = mean(size, x);
-        double yM = mean(size, y);
-
         double sdX = sd(size, x, xM);
+
+        double yM = mean(size, y);
         double sdY = sd (size, y, yM);
 
         for (int i = 0; i < size; i++) {
