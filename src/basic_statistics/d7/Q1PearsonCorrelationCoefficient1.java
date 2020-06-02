@@ -43,7 +43,7 @@ public class Q1PearsonCorrelationCoefficient1 {
             covv += (x[i] - xM)*(y[i] - yM);
         }
 
-        return (covv/size)/(size*sdX*sdY);
+        return (covv/size)/(sdX*sdY);
     }
 
     private static double sd(int size, double[] x, double mean) {
